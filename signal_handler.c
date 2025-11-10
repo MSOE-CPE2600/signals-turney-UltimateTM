@@ -7,6 +7,8 @@
  * Modified by: Gabe Limberg
  * 
  * Brief summary of modifications:
+ * Removed exit(1) in the handle_signal() function to prevent "killing" the process. Must now 
+ * manually find the PID of the process and use kill -kill (PID) to end the process
  */
 
 
@@ -20,7 +22,7 @@
  */
 void handle_signal() {
     printf("Received a signal\n");
-    exit(1);
+    // exit(1); removed for lab requirement
 }
 
 int main() {
