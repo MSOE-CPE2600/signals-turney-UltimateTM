@@ -3,7 +3,7 @@
  * Modified by: Gabe Limberg
  * 
  * Brief summary of program:
- * Handles a signal from SIUSR1 and returns the PID of the sender and receiver
+ * Handles a signal from SIUSR1 and returns the PID of the sender and receiver. Receives integer from sender process. 
  */
 
 #define _POSIX_C_SOURCE 200809L // need to include for definitions of sig_action
